@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+    <h2>#signup</h2>
+    <p>Sign up to create an account</p>
+</section> 
+<div class="auth-container">
+    <div class="auth-box">
+        <h2>Register</h2>
+
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+
+        <button onclick="register()">Register</button>
+
+        <p style="text-align:center; margin-top:15px">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

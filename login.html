@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<section id="page-header" class="about-header">
+    <h2>#login</h2>
+    <p>Do login to your account</p>
+</section>
+
+
+<div class="auth-container">
+    <div class="auth-box">
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <p style="text-align:center; margin-top:15px">
+            New user?
+            <a href="register.html">Register</a>
+        </p>
+    </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

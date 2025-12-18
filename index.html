@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER-->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- hero -->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button onclick="goToShop()">Shop Now</button>
+    </section>
+    <!-- < FEATURE SECTION  -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+    <!-- FEATURED PRODUCTS  -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" data-name="Men Printed T-Shirt" data-price="1499" data-image="img/products/f1.jpg">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Men Printed T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,499</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Casual Cotton T-Shirt" data-price="999" data-image="img/products/f2.jpg">
+                <img src="img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Casual Cotton T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>999</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Slim Fit Polo T-Shirt" data-price="1299" data-image="img/products/f3.jpg">
+                <img src="img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>puma</span>
+                    <h5>Slim Fit Polo T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,299</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Solid Black T-Shirt" data-price="899" data-image="img/products/f4.jpg">
+                <img src="img/products/f4.jpg" alt="">
+                <div class="des">
+                    <span>roadster</span>
+                    <h5>Men Solid Black T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>899</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Oversized Graphic T-Shirt" data-price="1599" data-image="img/products/f5.jpg">
+                <img src="img/products/f5.jpg" alt="">
+                <div class="des">
+                    <span>hrx</span>
+                    <h5>Oversized Graphic T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,599</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Sports Active T-Shirt" data-price="1199" data-image="img/products/f6.jpg">
+                <img src="img/products/f6.jpg" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Men Sports Active T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,199</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Cotton Crew Neck T-Shirt" data-price="749" data-image="img/products/f7.jpg">
+                <img src="img/products/f7.jpg" alt="">
+                <div class="des">
+                    <span>bewakoof</span>
+                    <h5>Cotton Crew Neck T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>749</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Striped Casual T-Shirt" data-price="1099" data-image="img/products/f8.jpg">
+                <img src="img/products/f8.jpg" alt="">
+                <div class="des">
+                    <span>zara</span>
+                    <h5>Men Striped Casual T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,099</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER SECTION  -->
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span> - All T-Shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <!--  NEW ARRIVALS -->
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" data-name="Men Relaxed Fit T-Shirt" data-price="1099" data-image="img/products/n1.jpg">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>zara</span>
+                    <h5>Men Relaxed Fit T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,099</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Casual Round Neck T-Shirt" data-price="899" data-image="img/products/n2.jpg">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>roadster</span>
+                    <h5>Casual Round Neck T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>899</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Printed Casual T-Shirt" data-price="1299" data-image="img/products/n3.jpg">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>hrx</span>
+                    <h5>Men Printed Casual T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,299</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Oversized Streetwear T-Shirt" data-price="1599"data-image="img/products/n4.jpg">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>bewakoof</span>
+                    <h5>Oversized Streetwear T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,599</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Cotton Summer T-Shirt" data-price="749" data-image="img/products/n5.jpg">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>uspolo</span>
+                    <h5>Men Cotton Summer T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>749</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Men Sports Training T-Shirt" data-price="1199" data-image="img/products/n6.jpg">
+                <img src="img/products/n6.jpg" alt="">
+                <div class="des">
+                    <span>nike</span>
+                    <h5>Men Sports Training T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,199</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Striped Casual Wear T-Shirt" data-price="999" data-image="img/products/n7.jpg">
+                <img src="img/products/n7.jpg" alt="">
+                <div class="des">
+                    <span>levis</span>
+                    <h5>Striped Casual Wear T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>999</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            <div class="pro" data-name="Premium Solid Color T-Shirt" data-price="1399" data-image="img/products/n8.jpg">
+                <img src="img/products/n8.jpg" alt="">
+                <div class="des">
+                    <span>h&m</span>
+                    <h5>Premium Solid Color T-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>1,399</h4>
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--SMALL BANNER SECTION  -->
+    <section id="sm-banner" class="section-p1">
+
+        <div class="banner-box">
+            <h4>Crazy Deals</h4>
+            <h2>Buy 1 Get 1 Free</h2>
+            <span>The best classic dress is on sale</span>
+            <button class="white">Learn More</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Spring / Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale</span>
+            <button class="white">Collection</button>
+        </div>
+
+    </section>
+
+    <!--TEXT BANNER SECTION -->
+    <section id="banner3">
+
+        <div class="banner-box">
+            <h2>Seasonal Sale</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>New Footwear Collection</h2>
+            <h3>Spring / Summer 2024</h3>
+        </div>
+
+        <div class="banner-box banner-box3">
+            <h2>T-Shirts</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer class="section-p1">
+
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <span>FB</span>
+                    <span>TW</span>
+                    <span>IG</span>
+                    <span>YT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="help.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Cara</p>
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

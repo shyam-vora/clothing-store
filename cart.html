@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Ecommerce</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section id="header">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="lg-bag">
+                <a class="active" href="cart.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- PAGE HEADER -->
+<section id="page-header" class="about-header">
+    <h2>#Cart</h2>
+    <p>Review your selected items</p>
+</section>
+
+<!-- CART TABLE -->
+<section id="cart" class="section-p1">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+
+        <tbody id="cart-items">
+            <!-- JS will render items -->
+        </tbody>
+    </table>
+</section>
+
+<!-- CART TOTAL -->
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button class="normal">Apply</button>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+            <tr>
+                <td>Total</td>
+                <td><strong id="cart-total">$0</strong></td>
+            </tr>
+        </table>
+        <button class="normal" onclick="goToCheckout()">Proceed to checkout</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+ <footer class="section-p1">
+
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <span>FB</span>
+                    <span>TW</span>
+                    <span>IG</span>
+                    <span>YT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="help.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Cara Ecommerce Website - HTML CSS JS</p>
+        </div>
+
+    </footer>
+
+<script src="cartPage.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

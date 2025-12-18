@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<section id="header">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active" href="checkout.html">Checkout</a></li>
+            <li id="lg-bag">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- PAGE HEADER -->
+<section id="page-header" class="about-header">
+    <h2>#Checkout</h2>
+    <p>Almost there! Complete your order</p>
+</section>
+
+<!-- CHECKOUT -->
+<div class="auth-container">
+    <div class="auth-box">
+
+        <h2>Shipping Details</h2>
+
+        <!--  FORM -->
+        <form id="checkout-form">
+
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="phone" placeholder="Mobile Number">
+
+
+            <h3 class="checkout-total">
+                Order Total: <span id="checkout-total">₹0</span>
+            </h3>
+
+            <button type="submit" class="normal">
+                Confirm Order
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>
