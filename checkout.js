@@ -14,7 +14,7 @@ for (let i = 0; i < cart.length; i++) {
 }
 
 // SHOW TOTAL
-totalEl.innerText = "$" + total;
+totalEl.innerText = "₹"+total;
 
     // ================= FORM SUBMIT =================
     document.getElementById("checkout-form").addEventListener("submit", function (e) {
@@ -29,7 +29,7 @@ totalEl.innerText = "$" + total;
             return;
         }
 
-        alert("🎉 Order placed successfully!");
+        alert(" Order placed successfully!");
 
         localStorage.removeItem("cart");
         window.location.href = "success.html";
